@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { NavLinksComponent } from '../shared/nav-links/nav-links.component';
 
 @Component({
@@ -6,6 +7,16 @@ import { NavLinksComponent } from '../shared/nav-links/nav-links.component';
   standalone: true,
   imports: [NavLinksComponent],
   templateUrl: './footer.component.html',
+  styles: `
+  .footer-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+  `,
 })
 export class FooterComponent {
   public getCurrentYear() {

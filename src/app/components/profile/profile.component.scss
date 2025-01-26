@@ -1,19 +1,30 @@
-.profile-pic {
-  max-width: 450px;
-  width: 100%;
-  border-radius: 50%;
-
-  @media (max-width: 1400px) {
-    max-width: 300px;
-    width: 100%;
-  }
+.hero-container {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #000;
+  color: #fff;
 }
 
-.pic-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
   margin-bottom: 2rem;
-  border-radius: 50%;
-  background-color: bisque;
+}
+
+.hero-content button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #00c4ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #008cb4;
 }

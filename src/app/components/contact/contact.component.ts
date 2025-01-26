@@ -11,6 +11,12 @@ export class ContactComponent {
     window.open('https://www.linkedin.com/in/mohamed-maatoug/', '_blank');
   }
 
+  public contact = {
+    number: '+216 29 272 307',
+    email: 'maatoug.mouhammed@gmail.com',
+    contry: 'Tunis Tunisia',
+  };
+
   public get email(): string {
     return 'maatoug.mouhammed@gmail.com';
   }

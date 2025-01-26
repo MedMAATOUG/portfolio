@@ -1,0 +1,17 @@
+<section id="services" class="services-section">
+  <h2 class="services-title">My Expertise</h2>
+  <div class="services-grid">
+    <div class="service-card" *ngFor="let service of services">
+      <div class="service-icon">
+        <img [src]="service.icon" [alt]="service.title" />
+      </div>
+      <div class="service-content">
+        <h3 class="service-title">{{ service.title }}</h3>
+        <p class="service-description">{{ service.description }}</p>
+        <ul class="service-skills">
+          <li *ngFor="let skill of service.skills">{{ skill }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

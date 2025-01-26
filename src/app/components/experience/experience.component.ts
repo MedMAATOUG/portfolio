@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ExperienceItem } from '../../models/models';
 
 @Component({
   selector: 'app-experience',
   standalone: true,
   templateUrl: './experience.component.html',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, CommonModule],
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-  private experienceItems: ExperienceItem[] = [
+  public experienceItems: ExperienceItem[] = [
     { name: 'MySQL', src: './assets/technologies/mysql.png' },
     { name: 'Aws', src: './assets/technologies/aws.png' },
     { name: 'Javascript', src: './assets/technologies/js.png' },

@@ -1,33 +1,19 @@
-<section id="projects" class="col-10 col-md-8 col-xl-8 mx-auto">
-  <p class="fs-5 text-center">Browse my recent</p>
-  <h1 class="fw-bold text-center mb-5">Projects</h1>
-
-  <div id="projectsCarousel" class="carousel carousel-dark slide my-5" data-bs-ride="carousel">
-
-    <div class="carousel-indicators my-3">
-      <button *ngFor="let _ of projects; let i = index"
-              type="button"
-              [attr.data-bs-target]="'#projectsCarousel'"
-              [attr.data-bs-slide-to]="i"
-              [ngClass]="{'active': i === 0}"
-              [attr.aria-current]="i === 0 ? 'true' : null"
-              [attr.aria-label]="'Slide ' + (i + 1)">
-      </button>
-    </div>
-
-    <div class="carousel-inner">
-      <div *ngFor="let project of projects; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-        <app-project-item [project]="project"></app-project-item>
+<section id="projects" class="projects-section">
+  <h2 class="projects-title">My Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="project-image">
+        <img [src]="project.src" [alt]="project.name" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-name">{{ project.name }}</h3>
+        <ul class="project-technologies">
+          <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+        </ul>
+        <a [href]="project.link" class="project-link" target="_blank">
+          View Project
+        </a>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-
 </section>

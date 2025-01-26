@@ -1,22 +1,78 @@
-.about-pic {
-  max-width: 450px;
-  width: 100%;
+/* About Section Styles */
+.about-section {
+  background-color: #1a202c; /* Dark background color */
+  padding: 4rem 2rem; /* Spacing around the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  @media (max-width: 1400px) {
-    max-width: 300px;
-    width: 100%;
+/* Container */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem; /* Space between columns */
+  max-width: 1200px; /* Centered max width */
+  width: 100%;
+  align-items: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    text-align: center; /* Center align text */
   }
 }
 
-.about-card {
-  max-width: 400px;
+/* Image */
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
   width: 100%;
+  max-width: 400px; /* Limit image size */
+  border-radius: 50%; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
-.about-subtitle {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin: 0.5rem 0;
+/* Text */
+.about-text {
+  color: #e2e8f0; /* Light text color */
 }
 
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #cbd5e0;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #38bdf8, #6366f1); /* Gradient Button */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.about-btn:hover {
+  background: linear-gradient(
+    to right,
+    #6366f1,
+    #38bdf8
+  ); /* Reverse Gradient */
+}

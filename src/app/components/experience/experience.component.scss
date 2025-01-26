@@ -43,3 +43,96 @@
   width: auto !important;
   margin: 0 40px !important;
 }
+
+/* General Section Styles */
+.skill-set-section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #1a202c; /* Dark background for dark mode */
+  color: #e2e8f0; /* Light text for contrast */
+  text-align: center;
+}
+
+.skill-set-header {
+  margin-bottom: 3rem;
+}
+
+.skill-set-header .subtitle {
+  font-size: 1.25rem;
+  color: #cbd5e0; /* Muted light text */
+}
+
+.skill-set-header .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Carousel Styles */
+.skill-carousel {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 2rem 0;
+}
+
+.carousel-track {
+  display: inline-block;
+  animation: slide 30s linear infinite; /* Smooth infinite scrolling */
+  padding: 0 1rem;
+}
+
+.skill-icon {
+  width: 80px;
+  height: auto;
+  margin: 0 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* Subtle glow on hover */
+}
+
+/* Keyframes for Animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Add fading edges for effect */
+.skill-carousel::before,
+.skill-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  pointer-events: none;
+  background: linear-gradient(to right, #121212 0%, rgba(18, 18, 18, 0) 100%);
+  z-index: 2;
+}
+
+.skill-carousel::before {
+  left: 0;
+}
+
+.skill-carousel::after {
+  right: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .skill-icon {
+    width: 60px;
+    margin: 0 1rem;
+  }
+
+  .skill-set-header .title {
+    font-size: 2rem;
+  }
+}
