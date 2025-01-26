@@ -1,0 +1,19 @@
+.profile-pic {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 50%;
+
+  @media (max-width: 1400px) {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+.pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  background-color: bisque;
+}
