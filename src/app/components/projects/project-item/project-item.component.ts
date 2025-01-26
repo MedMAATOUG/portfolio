@@ -10,4 +10,8 @@ import type { Project } from '../../../models/models';
 })
 export class ProjectItemComponent {
   @Input({ required: true }) project!: Project;
+
+  public openApp(link: string): void {
+    window.open(link, '_blank');
+  }
 }
