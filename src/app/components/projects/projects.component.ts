@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
 import { NgClass, NgForOf } from '@angular/common';
+import { Component } from '@angular/core';
+
 import { ProjectItemComponent } from './project-item/project-item.component';
+
 import type { Project } from '../../models/models';
 
 @Component({
@@ -26,62 +28,29 @@ export class ProjectsComponent {
         'Github Actions',
       ],
       src: './assets/projects/portfolio.png',
-      link: 'https://github.com/SebastianoFazzino/my-portfolio',
+      link: 'https://mohamed-maatoug.netlify.app/',
     },
     {
-      name: 'Banking App Decision Engine',
-      description:
-        'Ever wondered how banks decide on loan approvals? Dive into the code of this project, built with Angular, TypeScript, HTML, SCSS, Java, and Spring Boot, to see a simplified version of the process.',
+      name: 'Tasks Management',
+      description: 'template for a task Management application',
       technologies: [
         'Angular',
         'TypeScript',
         'HTML',
         'SCSS',
         'Java',
-        'Spring Boot',
-        'H2 Database',
+        'Devextrem',
       ],
-      src: './assets/projects/bank.png',
+      src: './assets/projects/task-managment.png',
       link: 'https://github.com/SebastianoFazzino/banking-app',
     },
     {
-      name: 'Simplified Poker Game',
+      name: 'Clean service',
       description:
-        'Step into the world of card games with my simplified poker game project! Built with Scala 2.17.8, it features a simple console-based interface, a basic game engine and a Mongo persistent layer.',
-      technologies: ['Scala', 'MongoDB', 'Mockito', 'JUnit'],
-      src: './assets/projects/poker.png',
-      link: 'https://github.com/SebastianoFazzino/poker-game',
-    },
-    {
-      name: 'Number Game',
-      description:
-        'Discover an upgraded twist on the classic number game! This project integrates both frontend and backend development, using Java 11 with Spring Boot 2.7 for server-side logic and Angular 18 as user interface, styled with Bootstrap and FontAwesome',
-      technologies: [
-        'Java',
-        'Spring Boot',
-        'Angular',
-        'TypeScript',
-        'Bootstrap',
-        'FontAwesome',
-      ],
-      src: './assets/projects/numbers.png',
-      link: 'https://github.com/SebastianoFazzino/enhanced-number-game',
-    },
-    {
-      name: 'Data Science Project: The Battle of Neighborhoods',
-      description:
-        "A data science project analyzing Tallinn's neighborhoods using data from Foursquare, Wikipedia, and transport sites. It identifies ideal residential areas through clustering and regression techniques.",
-      technologies: [
-        'Python',
-        'Jupiter Notebook',
-        'Pandas',
-        'Numpy',
-        'Matplotlib',
-        'Seaborn',
-        'Foursquare API',
-      ],
-      src: './assets/projects/data-science.png',
-      link: 'https://github.com/SebastianoFazzino/IBM-Data-Science-Professional-Certificate/tree/main/Applied%20Data%20Science%20Capstone',
+        'Is a semple application for a clean service provider that can be used by customers to contact the companies ',
+      technologies: ['HTml', 'CSS', 'JavaScript'],
+      src: './assets/projects/cleanService.png',
+      link: 'https://radhia-clean.netlify.app/',
     },
   ];
 }
