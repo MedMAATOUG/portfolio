@@ -16,8 +16,8 @@ export class ProjectsComponent {
   protected projects: Project[] = [
     {
       name: 'My Portfolio',
-      description:
-        "Feel free to check out the code for my portfolio on Github. It's open for exploration, and you're welcome to fork it and create your own version!",
+      // description:
+      // "Feel free to check out the code for my portfolio on Github. It's open for exploration, and you're welcome to fork it and create your own version!",
       technologies: [
         'Angular',
         'TypeScript',
@@ -32,7 +32,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Tasks Management',
-      description: 'template for a task Management application',
+      // description: 'template for a task Management application',
       technologies: [
         'Angular',
         'TypeScript',
@@ -42,15 +42,22 @@ export class ProjectsComponent {
         'Devextrem',
       ],
       src: './assets/projects/task-managment.png',
-      link: 'https://github.com/SebastianoFazzino/banking-app',
+      link: 'projects-managment.netlify.app',
+    },
+    {
+      name: 'Watermon',
+      // description: ' ',
+      technologies: ['HTml', 'CSS', 'JavaScript'],
+      src: './assets/projects/waterMon.png',
+      link: 'watermon.netlify.app',
     },
     {
       name: 'Clean service',
-      description:
-        'Is a semple application for a clean service provider that can be used by customers to contact the companies ',
+      // description:
+      // 'Is a semple application for a clean service provider that can be used by customers to contact the companies ',
       technologies: ['HTml', 'CSS', 'JavaScript'],
       src: './assets/projects/cleanService.png',
-      link: 'https://radhia-clean.netlify.app/',
+      link: 'supercleanservice.netlify.app',
     },
   ];
 }

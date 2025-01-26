@@ -1,6 +1,6 @@
 export interface Project {
   name: string;
-  description: string;
+  // description: string;
   technologies: string[];
 
   src: string;
