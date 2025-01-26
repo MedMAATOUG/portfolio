@@ -3,8 +3,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #000;
-  color: #fff;
+  background-color: #000; /* Dark background */
+  color: #fff; /* Light text */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-logo {
+  border-radius: 50%; /* Circular shape */
+  width: 50px; /* Adjust size */
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid #00c4ff; /* Optional border color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
 .nav-links {
@@ -17,8 +31,9 @@
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #00c4ff;
+  color: #00c4ff; /* Highlight on hover */
 }

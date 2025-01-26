@@ -27,15 +27,18 @@
 
 /* Image */
 .about-image {
+  flex: 1 1 auto;
   display: flex;
   justify-content: center;
 }
 
-.about-img {
-  width: 100%;
-  max-width: 400px; /* Limit image size */
-  border-radius: 50%; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+.about-avatar {
+  border-radius: 50%;
+  width: 400px; /* Avatar size */
+  height: 400px;
+  object-fit: cover; /* Ensures image scales correctly */
+  border: 4px solid #1e293b; /* Optional border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 /* Text */
