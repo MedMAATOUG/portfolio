@@ -9,20 +9,16 @@
 
 /* Container */
 .about-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  display: flex;
   gap: 2rem; /* Space between columns */
-  max-width: 1200px; /* Centered max width */
   width: 100%;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
-  .about-container {
-    grid-template-columns: 1fr; /* Stack columns on smaller screens */
-    text-align: center; /* Center align text */
-  }
 }
 
 /* Image */
@@ -34,8 +30,8 @@
 
 .about-avatar {
   border-radius: 50%;
-  width: 400px; /* Avatar size */
-  height: 400px;
+  width: 300px; /* Avatar size */
+  height: 300px;
   object-fit: cover; /* Ensures image scales correctly */
   border: 4px solid #1e293b; /* Optional border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
